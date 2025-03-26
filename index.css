@@ -52,14 +52,22 @@ li a:hover{
     
 }
 
-img{
+.imagemSung{
     width:600px;
     height:400px;
     text-align: center;
     border-style: solid;
-    border-color:#2d0081;
+    border-color:#2d0081;   
     float:right;
     margin: 50px;
+    margin-top:50px;
+}
+
+.logo{
+    width:50px;
+    height:50px;
+    text-align: center;
+    padding: 10px;
 }
 
 section{
@@ -72,8 +80,31 @@ section p{
     margin-left: 10px;
 }
 
-footer{
-    background-color:#2d0081;
+.tabela{
+
+    width:auto;
+    margin: 10px auto;
+    text-align: center;
+    float:left;
+    margin-left:100px;
+    margin-bottom:100px;
+    margin-top:50px;
     
 }
+
+.tituloTabela{
+
+    margin: 10px auto;
+    text-align: center;
+}
+
+tr,td,th{
+    border: 1px solid white;
+    padding: 5px;
+}
+
+td,td{
+    font-size:14px;
+}
+
 
