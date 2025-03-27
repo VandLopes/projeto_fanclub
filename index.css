@@ -5,7 +5,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     
-    
 }
 
 nav{
@@ -21,11 +20,15 @@ nav a{
     text-align: center;
 }
 
+h1{
+    
+    text-align: center;
+}
+
 ul  {
 
     list-style-type: none;
     overflow: hidden;
-    position: none;
     margin: 0;
     padding: 0;
 }
@@ -49,7 +52,6 @@ li a{
 li a:hover{
     color: white;
     background-color: rgb(89, 0, 255);
-    
 }
 
 .imagemSung{
@@ -57,15 +59,15 @@ li a:hover{
     height:400px;
     text-align: center;
     border-style: solid;
-    border-color:#2d0081;   
+    border-color:#2d0080;   
     float:right;
     margin: 50px;
-    margin-top:50px;
+    margin-top:30px;
 }
 
 .logo{
     width:50px;
-    height:50px;
+    height:45px;
     text-align: center;
     padding: 10px;
 }
@@ -105,6 +107,38 @@ tr,td,th{
 
 td,td{
     font-size:14px;
+}
+
+.registerFa{
+    width: 300px;
+    margin: 0px auto;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.registerFa input, .registerFa textarea{
+
+    margin: 5px auto;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.registerFa textArea{
+    height: 100px;
+    resize:none;
+    
+}
+.registerFa button{
+    width: 30%;
+    margin: 0 10%;
+    font-weight: bold;
+    font-size:16px;
+}
+
+.registerFa button:hover{
+
+    color: white;
+    background-color: rgb(89, 0, 255);
 }
 
 
