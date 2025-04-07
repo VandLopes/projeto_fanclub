@@ -121,6 +121,7 @@ td,td{
     margin: 5px auto;
     width: 100%;
     padding: 5px 0;
+   
 }
 
 .registerFa textArea{
@@ -141,4 +142,17 @@ td,td{
     background-color: rgb(89, 0, 255);
 }
 
+.registerFa input[type="radio"]{
+    width: auto; /* Permite que o rádio tenha seu tamanho normal */
+    margin-right: 5px; /* Adiciona um pequeno espaço entre o input e o label */
+}
+.registerFa input[type="checkbox"]{
+    width: auto; /* Permite que o rádio tenha seu tamanho normal */
+    margin-right: 5px; /* Adiciona um pequeno espaço entre o input e o label */
+}
+
+.radio-group {
+    display:inline;
+
+}
 

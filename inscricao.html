@@ -19,18 +19,35 @@
     <h1>Inscrição para Fã Club</h1> 
 </header>  
 <div>
-    <form method="post">
+    <form method="get">
         <fieldset class="registerFa">
             <legend>Dados de inscrição</legend>
             <label for="name">Nome:</label>
             <input type="text" id="name" name="name">
-            <label for="femail">E-mail:</label>
+            <label for="sexo">Sexo:</label><br>
+            <div class="radio-group">
+                <br><input type="radio" id="masculino" name="sexo" value="Masc">
+                <label for="masculino">Masculino</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="feminino" name="sexo" value="Fem">
+                <label for="feminino">Feminino</label>
+            </div> 
+            <div class="radio-group">
+                <input type="radio" id="outros" name="sexo" value="Outros">
+                <label for="outros">Outros</label><br>
+            </div>
+            <br><label for="femail">E-mail:</label>
             <input type="email" id="email" email="email">
             <label for="password">Senha:</label>
             <input type="password" id="password" passsword="password">
             <label for="fone">Telefone:</label>
             <input type="text" name="fone" id="fone">
-            <label for="comentario">Motivo de se inscrever: </label>
+            <div class="radio-group">
+                <input type="checkbox" id="desejo" name="desejo" value="participar">
+                <label for="checkbox">Desejo participar do fã-clube</label><br>
+            </div>
+            <br><label for="comentario">Motivo de se inscrever: </label>
             <textarea name="comentario" id="comentario"></textarea>
             <button type="reset">Limpar</button><button type="submit">Enviar</button>
         </fieldset>
@@ -39,9 +56,9 @@
 <footer>
     <nav>
         <ul>
-            <li><a href="https://www.youtube.com/watch?v=IrHTT2IEKpE"><img src="../ProjetoFaClub/imgs/logoYou.webp" alt="Logo Youtube-Icon-2000x2000" class="logo"></a> </li>
-            <li><a href="https://disboard.org/pt-br/server/1228000454693228636"><img src="../ProjetoFaClub/imgs/discord-logo-discord-icon-transparent-free-png.webp" class ="logo"></a></li>
-            <li><a href="https://www.crunchyroll.com/pt-br/series/GDKHZEJ0K/solo-leveling"><img src="../ProjetoFaClub/imgs/logoCrunch.png" class ="logo"></a></li>
+            <li><a href="https://www.youtube.com/watch?v=IrHTT2IEKpE"><img src="imgs/logoYou.webp" alt="Logo Youtube-Icon-2000x2000" class="logo"></a> </li>
+            <li><a href="https://disboard.org/pt-br/server/1228000454693228636"><img src="imgs/discord-logo-discord-icon-transparent-free-png.webp" class ="logo"></a></li>
+            <li><a href="https://www.crunchyroll.com/pt-br/series/GDKHZEJ0K/solo-leveling"><img src="imgs/logoCrunch.png" class ="logo"></a></li>
         </ul>    
     </nav>
 </footer>
