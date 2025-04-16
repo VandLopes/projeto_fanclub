@@ -1,49 +1,57 @@
 function validaInscricao(){
-    if(document.frmInscricao.name.value==""){
-        alert("Preencha o campo Nome.");
+    var nome = document.frmInscricao.name.value;
+    var expRegNome = new RegExp("^[A-zÀ-ü]{3,}([ ]{1}[A-zÀ-ü]{2,})+$");
+
+    if (!expRegNome.test(nome)){
+        alert("Preencha o campo Nome corretamente.");
         document.frmInscricao.name.focus();
         return false;
     }
 
-    if(document.frmInscricao.sexo.value==""){
+    if (document.frmInscricao.sexo.value==""){
         alert("Preencha o sexo.");
         document.frmInscricao.sexo.focus();
         return false;
     }
 
+    var email = document.frmInscricao.email.value;
+    var expRegEmail = new RegExp("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$");
     
-    if(document.frmInscricao.email.value==""){
-        alert("Preencha o campo e-mail.");
+    if (!expRegEmail.test(email)) {
+        alert("Preencha o campo E-mail corretamente.");
         document.frmInscricao.email.focus();
         return false;
     }
 
-    if(document.frmInscricao.password.value==""){
-        alert("Preencha o campo senha.");
+    if (document.frmInscricao.password.value==""){
+        alert("Preencha a senha.");
         document.frmInscricao.password.focus();
         return false;
     }
 
-    if(document.frmInscricao.fone.value==""){
-        alert("Preencha o campo telefone.");
+    var fone = document.frmInscricao.fone.value;
+    var expRegFone = new RegExp("^[(]{1}[1-9]{2}[)]{1}[0-9]{4,5}[-]{1}[0-9]{4}$");
+
+    if (!expRegFone.test(fone)){
+        alert("Preencha o campo Telefone corretamente.");
         document.frmInscricao.fone.focus();
         return false;
     }
 
-    if(document.frmInscricao.selproduto.value==""){
-        alert("Escolha algum Produto.");
-        document.frmInscricao.selproduto.focus();
+    
+    if (!document.frmInscricao.desejo.checked){
+        alert("Preencha o termo para Fâ-clube")
         return false;
     }
+
+
+    if(document.frmInscricao.comentario.value==""){
+        alert("Preencha o campo motivo.");
+        document.frmInscricao.comentario.focus();
+        return false;
+    }
+
+    return true;
+
 }
 
-function validarCheckBox(){
-
-    document.getElementById('meuFormulario').addEventListener('submit', function(event) {
-        var checkbox = document.getElementById('desehi');
-        if (!checkbox.checked) {
-            alert('Por favor, aceite os termos e condições antes de enviar.');
-            event.preventDefault(); // Impede o envio do formulário
-        }
-    });
-}

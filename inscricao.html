@@ -24,7 +24,7 @@
         <fieldset class="registerFa">
             <legend>Dados de inscrição</legend>
             <label for="name">Nome:</label>
-            <input type="text" id="name" name="name">
+            <input type="text" id="name" name="name" placeholder="Informe Nome e Sobrenome">
             <label for="sexo">Sexo:</label><br>
             <div class="radio-group">
                 <br><input type="radio" id="masculino" name="sexo" value="Masc">
@@ -39,18 +39,18 @@
                 <label for="outros">Outros</label><br>
             </div>
             <br><label for="femail">E-mail:</label>
-            <input type="email" id="email" email="email">
+            <input type="email" id="email" email="email" placeholder="mail@gmail.com">
             <label for="password">Senha:</label>
-            <input type="password" id="password" passsword="password">
+            <input type="password" id="password" passsword="password" placeholder="**********">
             <label for="fone">Telefone:</label>
-            <input type="text" name="fone" id="fone">
+            <input type="text" name="fone" id="fone" placeholder="(XX)XXXXX-XXXX">
             <div class="radio-group">
                 <input type="checkbox" id="desejo" name="desejo" value="participar">
                 <label for="checkbox">Desejo participar do fã-clube</label><br>
             </div>
             <br><label for="comentario">Motivo de se inscrever: </label>
-            <textarea name="comentario" id="comentario"></textarea>
-            <button type="reset">Limpar</button><button type="submit">Enviar</button>
+            <textarea name="comentario" id="comentario" placeholder="Meu motivo foi .....""></textarea>
+            <button type="reset" onclick="verificaMotivo(null)">Limpar</button><button type="submit">Enviar</button>
         </fieldset>
     </form>
 </div>
