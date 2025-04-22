@@ -55,3 +55,10 @@ function validaInscricao(){
 
 }
 
+//Assim que o documento HTML for carregado por completo...
+$(document).ready(function(){
+    //Carrega cabeçalho, menu e rodapé aos respectivos locais
+    $("header").load("/general/cabecalho.html");
+    
+})
+
